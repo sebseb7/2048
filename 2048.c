@@ -228,7 +228,7 @@ void render_2048(unsigned int* pixelbuffer,int zoom)
 
 			snprintf(text,10, "%i", field[x][y]);
 
-			draw_text_16pt(x*zoom+30,y*zoom+30,text,255,255,255);
+			if(field[x][y]!=0)draw_text_16pt(x*zoom+30,y*zoom+30,text,255,255,255);
 
 		}
 	}
