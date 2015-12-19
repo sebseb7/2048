@@ -6,7 +6,7 @@
 2048.app/Contents/Frameworks/SDL2.framework/libSDL2-2.0.0.dylib
 SDL2-2.0.4
 2048rc.o
-2048.ico
+a2048.ico
 2048.rc
 .DS_Store
 
