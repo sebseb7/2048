@@ -40,7 +40,7 @@ void gameover(int nr,int points)
 
 int main(int argc __attribute__((__unused__)), char *argv[] __attribute__((__unused__))) 
 {
-	srand(time(NULL));
+//	srand(time(NULL));
 	
 	int zoom = 90;
 
@@ -56,7 +56,7 @@ int main(int argc __attribute__((__unused__)), char *argv[] __attribute__((__unu
 
 		while(sdl_limit_fps(&limiter,10))
 		{
-			//update(getkey);
+			update_2048(getkey_single);
 			release_upped_keys();
 		}
 
