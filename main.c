@@ -44,7 +44,7 @@ int main(int argc __attribute__((__unused__)), char *argv[] __attribute__((__unu
 	
 	int zoom = 90;
 
-	unsigned int* pixelbuffer = sdl_init(4*zoom, 4*zoom,"2048",20);
+	unsigned int* pixelbuffer = sdl_init(GRIDSIZE*zoom, GRIDSIZE*zoom,"2048",20);
 
 	//set_gameover_callback(gameover);
 
