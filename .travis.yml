@@ -6,6 +6,7 @@ script:
 - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then make 2048_win.zip; fi
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]];   then make 2048_osx.zip; fi
 before_install:
+- git clone https://github.com/sebseb7/mcugui.git ../mcugui
 - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get update -qq ;fi
 - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install -y binutils-mingw-w64-i686 gcc-mingw-w64-i686 icoutils; fi
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update ;fi
